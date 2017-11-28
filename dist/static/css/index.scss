@@ -1,0 +1,898 @@
+@function size($n){
+	@return $n/20;
+}	
+html,body{
+	height:100%;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+li{
+	list-style:none;
+}
+*{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: normal;
+}
+img{
+    border:0;
+}
+body{
+    background-color: #f4f4f4;;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.ca{
+    width: 10px;
+    height: 30px;
+    background-position: 0 -78px;
+}
+.cd{
+    background-size: 20px 120px;
+    display: inline-block;
+}
+.current{
+    display: block;
+    /*-------头部搜索----------*/
+    .c3{
+        border-bottom: 0;
+        background: url(../img/index_black_semi.png) no-repeat;
+        background-size: 100% 100%;
+        opacity: .8;
+        height: 56px;
+        display: flex;
+    }
+    .vc{
+        position: fixed;
+        z-index: 12;
+        left: 0;
+        right: 0;
+        top: 0;
+        color: #555;
+        font-size: 17px;
+        text-align: center;
+        line-height: 44px;
+        /*-------定位----------*/
+        .location{
+            max-width: 40%;
+            vertical-align: top;
+            height: 24px;
+            border-radius: 23px;
+            line-height: 24px;
+            font-size: 14px;
+            color: #fff;
+            margin-top: 10px;
+            left: 0;
+            text-align: left;
+            margin-right: 47px;
+            span{
+                background: url(../img/icon_locate.png) no-repeat 4px 3px;
+                background-size: 16px;
+                padding-left: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-block;
+                vertical-align: top;
+                max-width: 72%;
+            }
+            .cd{
+                background: url(../img/index_icon24.png) no-repeat;
+                background-size: 20px 390px;
+                margin-left: -5px;
+            }
+            .ca{
+                background-position: -5px -27px;
+            }
+        }
+        /*-------定位----------*/
+        
+        /*-------搜索----------*/
+        .search{
+            position: absolute;
+            width: 53.435%;
+            background: rgba(255,255,255,0.35);
+            height: 30px;
+            top: 7px;
+            right: 36px;
+            position: relative;
+            border-radius: 20px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 30px;
+            text-align: left;
+            padding-left: 30px;
+            white-space: nowrap;
+            flex: 1;
+            .cd{
+                background: url(../img/index_icon24.png) no-repeat;
+                background-size: 20px 390px;
+                display: inline-block;
+            }
+            .ce{
+                position: absolute;
+                background-origin: content-box;
+                -webkit-background-origin: content-box;
+                padding: 6px;
+                top: -6px;
+                left: -6px;
+                width: 30px;
+                height: 30px;
+                background-position: 5px -55px;
+                border-radius: 20px; 
+            }
+        }
+        /*-------搜索----------*/
+
+        /*-------排序----------*/
+        .sequence{
+            width: 40px;
+            height: 56px;
+            background: url(../img/icon_paixu.png) no-repeat center 13px;
+            background-size: 15px;
+            position: absolute;
+            top: 1px;
+            right: 66px;
+        }
+        .miss{
+            display: none;
+        }
+        /*-------排序----------*/
+
+        /*-------查找----------*/
+        .seek{
+            width: 40px;
+            height: 46px;
+            background: url(../img/index_icon24.png) no-repeat;
+            background-size: 20px 390px;
+            background-position: 5px -320px;
+            position: absolute;
+            top: 1px;
+            right: 30px;
+        }
+        /*-------查找----------*/
+
+
+
+        /*-------提示信息----------*/
+        .message{
+            width: 18px;
+            height: 19px;
+            background: url(../img/index_icon_messagenew.png) no-repeat;
+            background-position: center center;
+            background-size: 18px 19px;
+            position: absolute;
+            right: 5px;
+            top: 7px;
+            padding: 5px;
+            i{
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                background-color: #f00;
+                position: absolute;
+                right: 2px;
+                top: 2px;
+                border-radius: 4px;
+            }
+            .hideDot{
+                display: none;
+            }
+        }
+        /*-------提示信息----------*/
+    }
+    /*-------头部搜索----------*/
+
+    /*-------内容部分----------*/
+    .scrolling{
+        .content{
+            .c2{
+                padding-bottom: 44px;
+                min-height:418px;
+                /*--------首页内容--------*/                
+                .a8{
+                    padding: 0;
+                    .b2{
+                        margin-top: 0;
+                    }
+                    .a9{
+                        min-height: 120px;
+                    }
+                    /*------------轮播图-------------*/
+                    .swipe7{ 
+                        position: relative;
+                        z-index: 8;
+                        white-space: nowrap;
+                        text-align: left;
+                        overflow: hidden;
+                        .swipe7list{
+                            position: relative;
+                            // width: 600%;
+                            .swipe7item{
+                                position: relative;
+                                display: inline-block;
+                                vertical-align: top;
+                                text-align: center;
+                                a{
+                                    display: block;                                    
+                                    width: 100%;
+                                    img{
+                                        display: block;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        /*------------分页符-------------*/
+                        .swiper-pagination{
+                            height: 10px;
+                            position: absolute;
+                            z-index: 3;
+                            left: 0;
+                            right: 0px;
+                            bottom: 6px;
+                            text-align: center;
+                            .swiper-pagination-bullet{
+                                display: inline-block;
+                                vertical-align: top;
+                                width: 3px;
+                                height: 3px;
+                                border: 2px solid #fff;
+                                border-radius: 8px;
+                                margin: 2px 2px;
+                                opacity: 1;
+                                background: none;
+                            }
+                            .swiper-pagination-bullet-active{
+                                background: #fff;
+                                border-color:#fff;
+                            }
+                        }
+                        /*------------分页符-------------*/
+                        
+                    }
+                    /*------------轮播图-------------*/
+
+                    /*-----------分类球-----------*/
+                     .classify{
+                        width: 100%;
+                        overflow-x: auto;
+                        background: #fff;
+                        .ball5{
+                            min-height: 90px;
+                            overflow-y: hidden;
+                            text-align: center;
+                            font-size: 0;
+                            .ball{
+                                display: inline-block;
+                                vertical-align: top;
+                                font-size: 12px;
+                                line-height: 20px;
+                                color: #000000;
+                                padding: 20px 0 13px;
+                                width: 20%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                img{
+                                    width: 70%;
+                                    margin: 0 auto;
+                                    display: block;
+                                    background-image: url(../img/index_ball_default_2.0.png);
+                                    background-size: 100%;
+                                }
+                            }
+                        }
+                    }
+                    /*-----------分类球-----------*/
+
+                    /*-----------banner1-----------*/
+                    .floorBannerWrapper{
+                        background: #fff;
+                        .c1{
+                            background-color: #fff;
+                            position: relative;
+                            margin: 2% 10px 2% 10px;
+                        }
+                    }
+                    /*-----------banner1-----------*/
+
+                    /*-----------act-warp -----------*/
+                    .index-act-warp{
+                        margin-top: 10px;
+                        .actcount5{
+                            background-color: #fff;
+                            overflow: hidden;
+                            position: relative;
+                            font-size: 0;
+                            .ag{
+                                display: inline-block;
+                                vertical-align: top;
+                                position: relative;
+                            }
+                            .sequence0{
+                                height: size(179rem);
+                                float: left;
+                                width: 43%;
+                                .ao{
+                                    display: block;
+                                    position: relative;
+                                    font-size: 12px;
+                                    height: 100%;
+                                    padding-left: 0;
+                                    overflow: hidden;
+                                    .as{
+                                        float: none;
+                                        display: block;
+                                        width: 100%;
+                                        .MS{
+                                            background: url(../img/14.png) no-repeat center;
+                                            display: block;
+                                            color: #fe4a63;    
+                                            margin-top: size(29.8rem);
+                                            height: size(21rem);
+                                            background-size: size(76rem);
+                                            max-width: 100%;
+                                            padding-left: 0;
+                                        }
+                                        .stilling{
+                                            padding: 0;
+                                            margin: 0 auto;
+                                            height: size(22rem);
+                                            text-align: center;
+                                            line-height:size(22rem);
+                                            margin-bottom: size(8.5rem);
+                                            max-width: 100%;
+                                            font-size: 12px;
+                                            min-height: 11px;
+                                            color: #999;
+                                            display: block;
+                                            width: 100%;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                        }
+                                        em{
+                                            width: size(37.5rem);
+                                            height: size(37.5rem);
+                                            background: url(../img/15.png) no-repeat;
+                                            background-size: size(37.5rem);
+                                            position: absolute;
+                                            right: 0;
+                                            top: 0;
+                                        }                                       
+                                    }
+                                    .at{
+                                        width: size(72.5rem);
+                                        height: size(72.5rem);
+                                        display: block;
+                                        margin: 0 auto;
+                                    }
+                                }
+                                .preLoadImage{
+                                    height: 100%;
+                                    width: 1px;
+                                    border-right: 1px solid #e8e8e8;
+                                    position: absolute;
+                                    top: 0;
+                                    right: -1px;
+                                    transform: scaleX(0.5);
+                                    -webkit-transform: scaleX(0.5);
+                                    z-index: 2;
+                                }
+                            }
+                            .asize{
+                                width: 28%;
+                                height: size(89.59rem);
+                                .border{
+                                    position: absolute;
+                                }
+                                .border-r{
+                                    top: 50%;
+                                    height: 50%; 
+                                    width: 1px;
+                                    border-right: 1px solid #e8e8e8;
+                                    right: -1px;
+                                    transform: scaleX(0.5);
+                                    -webkit-transform: scaleX(0.5);
+                                }
+                                .border-t{
+                                    top: 0%;
+                                    height: 50%; 
+                                    width: 1px;
+                                    border-right: 1px solid #e8e8e8;
+                                    right: -1px;
+                                    transform: scaleX(0.5);
+                                    -webkit-transform: scaleX(0.5);
+                                }
+                                .border-l{
+                                    height: 1px;
+                                    width: 50%;
+                                    border-bottom: 1px solid #e8e8e8;
+                                    bottom: -1px;
+                                    left: 0;
+                                    transform: scaleY(0.5);
+                                    -webkit-transform: scaleY(0.5);
+                                }
+                                .border-b{
+                                    height: 1px;
+                                    width: 50%;
+                                    border-bottom: 1px solid #e8e8e8;
+                                    bottom: -1px;
+                                    right: 0;
+                                    transform: scaleY(0.5);
+                                    -webkit-transform: scaleY(0.5);
+                                }
+                                .ah{
+                                    display: block;
+                                    height: 100%;
+                                    position: relative;
+                                    line-height:size(21rem);
+                                    text-align: left;
+                                    z-index: 6;
+                                    strong{
+                                        float: none;
+                                        text-align: center;
+                                        width: auto;
+                                        em{
+                                            display: block;
+                                            color: #333;
+                                            font-size: size(12rem);
+                                            padding-top: size(8.5rem);
+                                            line-height: size(13rem);
+                                            height: size(13rem);
+                                            font-weight: bold;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                        }
+                                        span{
+                                            display: block;
+                                            height: size(18rem);
+                                            color: #9cac96;
+                                            font-size: size(10rem);
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                        }
+                                    }
+                                    .ai{
+                                        width: size(46.9rem);
+                                        height: size(46.9rem);
+                                        margin: 0 auto;
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    /*-----------act-warp -----------*/
+                    
+                    
+
+                }
+                /*--------首页内容--------*/                
+                
+                /*--------附近店铺--------*/
+                .index-content-wrapper-recommend{
+                    .index-shop-wrap{
+                        margin-top: 10px;
+                        .title{
+                            font-size: 14px;
+                            line-height: 50px;
+                            height: 50px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            color: #70704e;
+                            text-align: center;
+                            position: relative;
+                            background-color: #FFF;
+                            .border{
+                                height: 1px;
+                                border-top: 1px solid #333;
+                                width: 228px;
+                                position: absolute;
+                                top: 50%;
+                                margin-top: -1px;
+                                left: 50%;
+                                transform: scaleY(0.5) translate(-50%,0);
+                                -webkit-transform: scaleY(0.5) translate(-50%,0);
+                            }
+                            span{
+                                position: relative;
+                                padding: 0 5px;
+                                background-color: #FFF;
+                                display: inline-block;
+                                height: 50px;
+                                line-height: 48px;
+                                font-size: 17px;
+                                font-weight: bold;
+                                color: #333;
+                            }
+                        }
+                        .shops{
+                            /*--------标签------*/
+                            .label{
+                                display: inline-block;
+                                width: 38px;
+                                height: 38px;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                z-index: 2;
+                                background: url(../img/icon_new_store.png) no-repeat;
+                                background-size: 100%;
+                            }
+                            /*--------标签------*/
+                            
+                            /*--------店铺------*/
+                            .shop{
+                                position: relative;
+                                padding: 15px 10px;
+                                min-height: 70px;
+                                border-top: 1px solid #e7e9e4;
+                                background: #FFF;
+                                /*--------内容------*/ 
+                                .contents{
+                                    position: relative;
+                                    font-size: 0;
+                                    min-height: 55px;
+                                    .content{
+                                        position: relative;
+                                        /*--------logo------*/  
+                                        .logo{
+                                            position: absolute;
+                                            left: 0;
+                                            top: 0;
+                                            bottom: 0;
+                                            span{
+                                                position: relative;
+                                                display: block;
+                                                img{
+                                                    float: left;
+                                                    width: 64px;
+                                                    height: 64px;
+                                                    border-radius: 4px;
+                                                    border: 1px solid #e8e8e8;
+                                                    display: inline-block;
+                                                    margin-right: 8px;
+                                                }
+                                            }
+                                        }
+                                        /*--------logo------*/  
+
+                                        /*--------详情------*/  
+                                        .detials{
+                                            font-size: 12px;
+                                            color: #999;
+                                            margin-left: 76px;
+                                            /*--------part 1------*/  
+                                            .introduce{
+                                                display: block;
+                                                min-height: 66px;
+                                                /*--------店名------*/    
+                                                .name{
+                                                    height: 20px;
+                                                    overflow: hidden;
+                                                    display: flex;
+                                                    flex: 1;
+                                                    h2{
+                                                        font-size: 16px;
+                                                        color: #333;
+                                                        overflow: hidden;
+                                                        text-overflow: ellipsis;
+                                                        white-space: nowrap;
+                                                        display: inline-block;
+                                                        margin-top: 0;
+                                                        font-weight: bold;
+                                                        flex: 1;
+                                                    }
+                                                    .store_honor_box{
+                                                        padding-top: 1px;
+                                                        .store_honor_icon {
+                                                            background-image:url(../img/16.png);
+                                                            display: inline-block;
+                                                            width: 18px;
+                                                            height: 20px;
+                                                            margin-right: 2px;
+                                                            background-position: center center;
+                                                            background-repeat: no-repeat;
+                                                            background-size: 16px auto;
+                                                        }
+                                                    }
+                                                }
+                                                /*--------店名------*/ 
+
+                                                /*--------配送------*/    
+                                                .send{
+                                                    font-size: 0;
+                                                    padding-top: 10px;
+                                                    overflow: hidden;
+                                                    .i9{
+                                                        display: inline-block;
+                                                        border: 1px solid #16A9ff;
+                                                        font-size: 0;
+                                                        border-radius: 2px;
+                                                        color: #16a9ff;
+                                                        line-height: 0;
+                                                        height: 15px;
+                                                        overflow: hidden;
+                                                        .dada{
+                                                            display: inline-block;
+                                                            line-height: 1;
+                                                            padding: 2px;
+                                                            font-size: 10px;
+                                                        }
+                                                        .db{
+                                                            line-height: 1;
+                                                            font-size: 10px;
+                                                        }
+                                                        .time{
+                                                            display: inline-block;
+                                                            padding: 2px;
+                                                            line-height: 1;
+                                                            font-size: 10px;
+                                                        }
+                                                    }
+                                                }
+                                                /*--------配送------*/
+
+                                                /*--------评价------*/
+                                                .judge{
+                                                    height: 14px;
+                                                    margin-top: 8px;
+                                                    overflow: hidden;
+                                                    font-size: 0;
+                                                    .star{
+                                                        height: 12px;
+                                                        padding-top: 2px;
+                                                        overflow: hidden;
+                                                        display: inline-block;
+                                                        position: relative;
+                                                        span{
+                                                            display: inline-block;
+                                                            font-size: 0;
+                                                            i{
+                                                                display: inline-block;
+                                                                width: 10px;
+                                                                height: 10px;
+                                                                background-position: 0 0;
+                                                                background-image: url(../img/newStar.png);
+                                                                background-repeat: no-repeat;
+                                                                background-size: auto 10px;
+                                                                margin-right: 1px;
+                                                            }
+                                                        }
+                                                    }
+                                                    /*--------销售------*/
+                                                    .sales{
+                                                        font-size: 11px;
+                                                        line-height: 14px;
+                                                        overflow: hidden;
+                                                        text-overflow: ellipsis;
+                                                        white-space: nowrap;
+                                                        color: #999;
+                                                        display: inline-block;
+                                                        .line_split{
+                                                            display: inline-block;
+                                                            width: 8px;
+                                                            height: 10px;
+                                                            background: url(../img/icon_line_split.jpg) no-repeat center 2px;
+                                                        }
+                                                    }
+                                                    /*--------销售------*/ 
+                                                }
+                                                /*--------评价------*/
+
+                                                /*--------配送信息------*/
+                                                .explain{
+                                                    display: block;
+                                                    margin-top: 8px;
+                                                    font-size: 11px;
+                                                    color: #999999;
+                                                    overflow: hidden;
+                                                    white-space: nowrap;
+                                                    text-overflow: ellipsis;
+                                                }
+                                                /*--------配送信息------*/   
+                                            }
+                                            /*--------part 1------*/  
+
+                                            /*--------part 2------*/
+                                            div{
+                                                .some{
+                                                    position: relative;
+                                                    padding-bottom: 0;
+                                                    margin-top: 12px;
+                                                    .border{
+                                                        position: absolute;
+                                                        top: 0;
+                                                        width: 100%;
+                                                        height: 1px;
+                                                        border-top: 1px dotted #cccccc;
+                                                        transform: scale(1,0.5);
+                                                    }
+                                                    .preferential{
+                                                        position: relative;
+                                                        color: #666666;
+                                                        font-size: 0px;
+                                                        .ticket{
+                                                            display: inline-block;
+                                                            width: 86%;
+                                                            font-size: 10px;
+                                                            ul{
+                                                                li{
+                                                                    margin-top: 10px;
+                                                                    font-size: 10px;
+                                                                    position: relative;
+                                                                    color: #999999;
+                                                                    -webkit-text-size-adjust: none;
+                                                                    text-overflow: ellipsis;
+                                                                    white-space: nowrap;
+                                                                    overflow: hidden;
+                                                                    i{
+                                                                        display: inline-block;
+                                                                        padding: 0 2px;
+                                                                        margin-right: 4px;
+                                                                        border-radius: 2px;
+                                                                        color: #ffffff;
+                                                                        height: 14px;
+                                                                        line-height: 14px;
+                                                                    }
+                                                                    .lq{
+                                                                        background: #fa3e2d;
+                                                                    }
+                                                                    .mj{
+                                                                        background: #5FBC65;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        .more{
+                                                            position: absolute;
+                                                            top: 3px;
+                                                            right: -10px;
+                                                            width: 14%;
+                                                            font-size: 10px;
+                                                            vertical-align: top;
+                                                            text-align: right;
+                                                            padding-top: 24px;
+                                                            height: 40px;
+                                                            margin-top: -16px;
+                                                            padding-right: 10px;
+                                                            i{
+                                                                background: url(../img/index.png) no-repeat;
+                                                                background-size: 20px 200px;
+                                                                display: inline-block;
+                                                                width: 18px;
+                                                                height: 10px;
+                                                                text-align: right;
+                                                                background-position: 2px -183px;
+                                                            }
+                                                        }
+                                                    }
+                                                    .lists{
+                                                        font-size: 0;
+                                                        vertical-align: top;
+                                                        white-space: nowrap;
+                                                        padding-top: 12px;
+                                                        .list{
+                                                            position: relative;
+                                                            display: inline-block;
+                                                            overflow: hidden;
+                                                            width: 25%;
+                                                            text-align: center;
+                                                            font-size: 0;
+                                                            vertical-align: top;
+                                                            max-height: 105px;
+                                                            .item{
+                                                                width: size(52rem);
+                                                                height: size(52rem);
+                                                                position: relative;
+                                                                display: block;
+                                                                border: 1px solid #f7f7f7;
+                                                                border-radius: 3px;
+                                                                img{
+                                                                    display: inline-block;
+                                                                    width: 100%;
+                                                                }
+                                                                .hot{
+                                                                    position: absolute;
+                                                                    left: 0;
+                                                                    top: 0;
+                                                                    padding: 1px 2px;
+                                                                    font-size: 9px;
+                                                                    color: #FFF;
+                                                                    background-color: #fc2c50;
+                                                                }
+                                                            }
+                                                            .price{
+                                                                color: #ff5757;
+                                                                margin-top: 3px;
+                                                                font-size: 12px;
+                                                                height: 17px;
+                                                                line-height: 17px;
+                                                                vertical-align: top;
+                                                                display: block;
+                                                                width: 62px;
+                                                                overflow: hidden;
+                                                                white-space: nowrap;
+                                                                text-overflow: ellipsis;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }  
+                                            /*--------part 2------*/  
+                                        }
+                                        /*--------详情------*/   
+                                    }
+                                }
+                                /*--------内容------*/ 
+                            }
+                            /*--------店铺------*/  
+                        }
+                    }
+                }
+                /*--------附近店铺--------*/
+            }
+            .hasbottom{
+                // padding-bottom: 100px;
+            }
+        }
+    }
+    /*-------内容部分----------*/
+
+    /*-------foot部分----------*/
+    .foot{
+        position: fixed;
+        z-index: 801;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        border-top: 1px solid #d9d9d9;
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        a{
+            vertical-align: top;
+            width: 20%;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: center;
+            padding-top: 30px;
+            height: 20px;
+            background-image: url(../img/nav4.png);
+            background-repeat: no-repeat;
+            background-size: 24px 600px;
+        }
+        .index{
+            background-position: center 0;
+            color: #39ac69;
+        }
+        .homeCategorySearch{
+            background-position: center -300px;
+        }
+        .cartList{
+            background-position: center -350px;
+        }
+        .orderList{
+            background-position: center -400px;
+        }
+        .mine{
+            background-position: center -450px;
+        }
+    }
+    /*-------foot部分----------*/
+    
+    
+}
